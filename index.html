@@ -27,6 +27,24 @@
     <link href="css/freelancer.min.css" rel="stylesheet">
 
     <style type="text/css">
+      .resaltado{
+         color: #f18701;
+         font-weight: bold;
+      }
+
+      .violeta{
+         color: #FFF;
+         font-weight: bold;
+         background-color: rgb(139, 31, 125);
+         padding: 0px 2px;
+      }
+
+
+      .typed-cursor
+      {
+        font-size: -webkit-xxx-large;
+      }
+
       #mainNav .navbar-nav
       {
         letter-spacing:0px;
@@ -101,7 +119,9 @@
       .logo_empresa
       {
         filter: grayscale(100%); 
-        width: 50%
+        width: 130px;
+        transform: translate(-50%,-50%);
+
       }
 
       #mainNav .navbar-nav li.nav-item a.nav-link:hover{
@@ -178,6 +198,69 @@
           color: #fff;
       }
 
+      #somos_ilh{
+        font-size: 17px;
+      }
+
+
+
+        .scroll-text {
+  border: 1px solid red;
+  width: 400px;
+  height: 4.5em;
+  overflow: hidden;
+}
+.scroll-text ul {
+  width: 800px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0;
+}
+.scroll-text ul li {
+  height: 1.5em;
+}
+.scroll-img {
+  /*border: 1px solid red;*/
+  width: -webkit-fill-available;
+  height: 132px;
+  overflow: hidden;
+  font-size: 0;
+  padding-top: 80px;
+}
+.scroll-img ul {
+  width: 700px;
+  height: 600px;
+  margin: 0;
+}
+.scroll-img ul li {
+  display: inline-block;
+  margin: 10px 50px 10px 10px;
+}
+#demo4.scroll-img ul,
+#demo5.scroll-img ul {
+  width: 1500px;
+}
+#demo5-btn {
+  width: 680px;
+  padding-top: 10px;
+}
+#demo6 {
+  width: 412px;
+}
+#demo6-queue {
+  width: 680px;
+}
+#demo6 p, #demo6-queue p {
+  width: 124px;
+  height: 124px;
+  background-color: lightgray;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 82px;
+  text-align: center;
+  display: table-cell;
+  vertical-align:middle;
+}
+
 
     </style>
 
@@ -191,10 +274,12 @@
     <!-- typed -->
 
   </head>
-
+  
   <body id="page-top">
+    
 
-     <!-- Menu -->
+
+    <!-- Menu -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container" style="border-bottom: 1px solid rgba(255, 156, 0, 0.22)">
         <a class="navbar-brand js-scroll-trigger" href="#page-top" style="width:10%">
@@ -225,8 +310,7 @@
         </div>
       </div>
     </nav>
-
-
+ 
 
     <!-- Home -->
     <header class="masthead  " style="background-color: white; padding-top: 170px;" >
@@ -268,7 +352,7 @@
 
       <div id="subtitulo" class="text-white" style="background-color: red; background-color: rgb(139, 31, 125); padding: 20px 0px 20px 0px;  margin-top: 50px; text-align: left; font-size: 22px;"> 
         <div class="container" > 
-            Somos <strong style="    color: #f18701;"> pensadores multidisciplinarios</strong> . Tomamos<br> perspectiva , nos preguntamos e investigamos para<br> comprender cada realidad.  
+            Somos <span class="resaltado"> pensadores multidisciplinarios</span>. Tomamos<br> perspectiva, nos preguntamos e investigamos para<br> comprender cada realidad.  
             Sabemos que cada proyecto puede nutrirse de distintas <br> miradas y talentos. Por eso trabajamos conformando equipos <br> de acuerdo a cada caso. 
          </div>
       </div>
@@ -279,29 +363,23 @@
        <div class="container">
         <h3 class="text-center " style="font-color:#000">Somos ILH</h3>
         <br><br>
-        <div class="row">
-          La realidad es compleja. Pero si podemos entenderla, todo se vuelve más simple.
+        <div class="">
+          La realidad es compleja. Pero si podemos entenderla, todo se vuelve más  <span class="violeta">  simple  </span>. <br><br>
 
-          Somos inquietos. Nos reconocemos curiosos y siempre en busca de nuevas experiencias.
+          Somos inquietos. Nos reconocemos <span class="violeta">curiosos</span> y siempre en busca de nuevas experiencias.<br><br>
 
-          Hacemos preguntas, muchas preguntas. Buscamos respuestas.
+          Hacemos preguntas, muchas preguntas.<span class="violeta"> Buscamos respuestas </span>. <br>
+          No nos conformamos tan rápido. Nos cuesta dormir si no comprendemos algo. <br><br>
 
-          No nos conformamos tan rápido.
+          <span class="violeta">Creamos orden</span> a partir del caos.<br><br>
 
-          Nos cuesta dormir si no comprendemos algo.
+          No nos gusta la indiferencia.<br>
+          Siempre damos lo mejor. Nos importa, y mucho, la calidad en todo lo que hacemos.<br><br>
 
-          Creamos orden a partir del caos.
-
-          No nos gusta la indiferencia.
-
-          Siempre damos lo mejor. Nos importa, y mucho, la calidad en todo lo que hacemos.
-
-          Entendemos que la colaboración es superior a cualquier ego. “Cuatro ojos ven más que dos” y
-          “dos cabezas piensan más que una”.
-
-          Y siendo más, ésto crece exponencialmente.
+          Entendemos <span class="violeta">que la colaboración es superior</span> a cualquier ego. “Cuatro ojos ven más que dos” y
+          “dos cabezas piensan más que una”. Y siendo más, ésto crece exponencialmente.
         </div>
-      </div>
+        </div>
     </section>
 
     <!-- ¿Qué hacemos? -->
@@ -379,6 +457,34 @@
                 Trabajamos conformando equipos con nuestros clientes porque simplemente sabemos que ese es el modo correcto de hacerlo.  
           </div> 
           <div class="row" style="padding-top: 30px">
+
+            <div id="demo4" class="scroll-img">
+              <ul>
+                <li> <img class="logo_empresa" src="img/logos/toyota.jpg" alt="" style=" height: 80px;"></li>
+                
+                <li> <img class="logo_empresa" src="img/logos/movistar.png" alt=""  style=" height: 80px" ></li>
+                
+                <li> <img class="logo_empresa" src="img/logos/colegio_salvador.jpg" style=" width: 100px;  height: 80px; " alt="" ></li>
+
+                <li> <img class="logo_empresa" src="img/logos/ucema.jpg" alt="" style=" width: 200px;"></li>
+
+                <li> <img class="logo_empresa" src="img/logos/funtime.png" alt="" style="height: 80px;"  ></li>
+
+                <li> <img class="logo_empresa" src="img/logos/ypf.png" alt=""  ></li>
+
+                <li> <img class="logo_empresa" src="img/logos/papelera.jpg" alt="" ></li>
+
+                <li> <img class="logo_empresa" src="img/logos/telefonica.png" alt="" ></li>
+
+                <li> <img class="logo_empresa" src="img/logos/bushi.jpg" alt="" ></li>
+
+                <li> <img class="logo_empresa" src="img/logos/andromaco.png" alt="" ></li>
+
+                <li> <img class="logo_empresa" src="img/logos/credilogros.png" alt="" ></li>
+              </ul>
+            </div>
+
+          <!--
               <div class="col-md-6 col-lg-2 div_logo">
                 
                   <img class="img-fluid logo_empresa" src="img/logos/toyota.jpg" alt="" style="  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
@@ -441,6 +547,9 @@
                   <img class="img-fluid logo_empresa" src="img/logos/credilogros.png" alt="">
               </div>
  
+          </div>
+
+          -->
           </div>
         </div>
     </section>
@@ -536,6 +645,14 @@
                 Proveemos soluciones
                 de investigacion y marketing.
               </p>
+              <br>
+              <p>
+                  <img   class="icono_que_hacemos" src="img/invetigacion.png" alt=""  style="width:50px"> 
+                  <img  class="icono_que_hacemos" src="img/control.png" alt=""   style="width:50px"> 
+                  <img  class="icono_que_hacemos" src="img/estrategia.png" alt=""   style="width:50px"> 
+                  <img  class="icono_que_hacemos" src="img/analitycs.png" alt=""  style="width:50px" > 
+              </div> 
+              </p>
           </div>
         </div>
       </div>
@@ -546,9 +663,8 @@
         <small style="color: rgb(248, 176, 0)">Copyright &copy; ILH 2017</small>
       </div>
     </div>
-
-  
  
+
 
 
 
@@ -573,6 +689,21 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.scrollbox.js"></script>
+ 
+
+    <script type="text/javascript">
+ 
+        $('#demo4').scrollbox({
+          direction: 'h',
+          switchItems: 1 
+        });
+
+
+    </script>
+
 
   </body>
 
